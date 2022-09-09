@@ -105,12 +105,19 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
+#line 41 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
 
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(3000);
+        Peliculas = ObtenerPeliculas();
+    }
+
 
     public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
+    public List<Pelicula> Peliculas;
 
 
     private Pelicula ObtenerPelicula()
@@ -127,8 +134,8 @@ using BlazorPeliculas.Shared.Entidades;
     {
         return new List<Pelicula>()
             {
-                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
-                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
+                new Pelicula(){Titulo = "<b>SpiderMan : Far from home</b>", Lanzamiento = new DateTime(2019,7,2)},
+                new Pelicula(){Titulo = "<i>Moana</i>", Lanzamiento = new DateTime(2016,11,23)},
                 new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
             };
     }
