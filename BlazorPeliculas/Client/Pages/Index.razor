@@ -1,56 +1,17 @@
 ﻿@page "/"
 
-@*<p>Hola, @UtilidadesString.Enmayuscular(nombre)</p>
 
-<button @onclick="@ManejarClick">Presioname</button>*@
 
 <div>
-    <h3>Pelicula</h3>
-
-    @*@foreach (var pelicula in ObtenerPeliculas())
-        {
-            <div>
-                <p>Título: <b>@pelicula.Titulo</b></p>
-                <p>Lanzamiento: <b>@pelicula.Lanzamiento.ToString("dd MMM yyyy")</b></p>
-            </div>
-        }*@
-
-    @if (Peliculas == null)
-    {
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831" />
-        <text>Cargando...</text>
-    }
-    else if(Peliculas.Count == 0)
-            {
-                <text>No hay registros para mostrar...</text>
-            }
-    else
-    {
-        @for (var i = 0; i < Peliculas.Count; i++)
-        {
-            <div>
-                <p>@(i+1))  Título: @((MarkupString)Peliculas[i].Titulo)</p>
-                <p>Lanzamiento: <b>@Peliculas[i].Lanzamiento.ToString("dd MMM yyyy")</b></p>
-            </div>
-        }
-    }
-
-
+    <h3>Pelicula</h3>   
 </div>
 
 @code{
     string nombre = "Endersson Alonso Mendoza Muñoz";
 
-    protected override async Task OnInitializedAsync()
-    {
-        await Task.Delay(3000);
-        Peliculas = ObtenerPeliculas();
-    }
+   
 
-
-    public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
-    public List<Pelicula> Peliculas;
-
+    public Pelicula SpiderMan { get { return ObtenerPelicula(); } }    
 
     private Pelicula ObtenerPelicula()
     {
@@ -61,16 +22,7 @@
         };
     }
 
-    // Lista
-    private List<Pelicula> ObtenerPeliculas()
-    {
-        return new List<Pelicula>()
-            {
-                new Pelicula(){Titulo = "<b>SpiderMan : Far from home</b>", Lanzamiento = new DateTime(2019,7,2)},
-                new Pelicula(){Titulo = "<i>Moana</i>", Lanzamiento = new DateTime(2016,11,23)},
-                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
-            };
-    }
+    // Lista   
 
     private void ManejarClick()
     {
