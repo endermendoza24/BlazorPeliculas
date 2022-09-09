@@ -4,14 +4,26 @@
 
 <div>
     <h3>Pelicula</h3>   
+    <ListadoPeliculas Peliculas="ObtenerPeliculas()" />
 </div>
 
 @code{
     string nombre = "Endersson Alonso Mendoza Muñoz";
 
-   
 
-    public Pelicula SpiderMan { get { return ObtenerPelicula(); } }    
+
+    private List<Pelicula> ObtenerPeliculas()
+    {
+        return new List<Pelicula>()
+            {
+                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
+                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
+                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
+            };
+    }
+
+
+    public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
 
     private Pelicula ObtenerPelicula()
     {

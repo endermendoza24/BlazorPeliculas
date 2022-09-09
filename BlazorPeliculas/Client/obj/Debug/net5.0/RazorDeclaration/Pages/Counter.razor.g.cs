@@ -105,7 +105,7 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Counter.razor"
+#line 10 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Counter.razor"
        
     private int currentCount = 0;
 

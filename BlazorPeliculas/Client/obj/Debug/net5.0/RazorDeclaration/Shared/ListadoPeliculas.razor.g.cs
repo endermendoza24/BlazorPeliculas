@@ -103,6 +103,15 @@ using BlazorPeliculas.Shared.Entidades;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 19 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
+       
+    [Parameter] public List<Pelicula> Peliculas { get; set; }
+
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
