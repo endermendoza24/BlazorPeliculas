@@ -80,6 +80,20 @@ using BlazorPeliculas.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Client.Helpers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Shared.Entidades;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\FetchData.razor"
 using BlazorPeliculas.Shared;
 

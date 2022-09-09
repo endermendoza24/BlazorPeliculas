@@ -89,6 +89,13 @@ using BlazorPeliculas.Client.Helpers;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Shared.Entidades;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -89,6 +89,13 @@ using BlazorPeliculas.Client.Helpers;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Shared.Entidades;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,14 +105,40 @@ using BlazorPeliculas.Client.Helpers;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 7 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
+#line 19 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
+
+
+    public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
+
+
+    private Pelicula ObtenerPelicula()
+    {
+        return new Pelicula()
+        {
+            Titulo = "Spiderman far from Home",
+            Lanzamiento = new DateTime(2019, 7, 2)
+        };
+    }
+
+    // Lista
+    private List<Pelicula> ObtenerPeliculas()
+    {
+        return new List<Pelicula>()
+            {
+                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
+                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
+                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
+            };
+    }
 
     private void ManejarClick()
     {
         Console.WriteLine("Me  han clickeado desde método");
     }
+
+
 
 #line default
 #line hidden

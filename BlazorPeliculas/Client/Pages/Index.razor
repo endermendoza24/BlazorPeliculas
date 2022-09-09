@@ -6,8 +6,22 @@
 
 <div>
     <h3>Pelicula</h3>
-    <p>Título: <b>@SpiderMan.Titulo</b></p>
-    <p>Lanzamiento: <b>@SpiderMan.Lanzamiento.ToString("dd MMM yyyy")</b></p>
+
+    @foreach (var pelicula in ObtenerPeliculas())
+    {
+        <div>
+            <p>Título: <b>@pelicula.Titulo</b></p>
+            <p>Lanzamiento: <b>@pelicula.Lanzamiento.ToString("dd MMM yyyy")</b></p>
+        </div>
+    }
+
+    @for (var i = 0; i < Peliculas.Count; i++)
+    {
+        <div>
+            <p>@(i+1))  Título: <b>@Peliculas[i].Titulo</b></p>
+            <p>Lanzamiento: <b>@Peliculas[i].Lanzamiento.ToString("dd MMM yyyy")</b></p>
+        </div>
+    }
 </div>
 
 @code{
@@ -15,6 +29,7 @@
 
 
     public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
+    public List<Pelicula> Peliculas { get { return ObtenerPeliculas(); } }
 
 
     private Pelicula ObtenerPelicula()
@@ -24,6 +39,17 @@
             Titulo = "Spiderman far from Home",
             Lanzamiento = new DateTime(2019, 7, 2)
         };
+    }
+
+    // Lista
+    private List<Pelicula> ObtenerPeliculas()
+    {
+        return new List<Pelicula>()
+            {
+                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
+                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
+                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
+            };
     }
 
     private void ManejarClick()
