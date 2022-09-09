@@ -104,9 +104,15 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 6 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\PeliculaIndividual.razor"
+#line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\PeliculaIndividual.razor"
       
     [Parameter] public  Pelicula Pelicula { get; set; }
+    [Parameter] public bool MostrarBotones { get; set; } = false;
+
+    void Eliminar()
+    {
+        Console.WriteLine($"Eliminando la pelicula {Pelicula.Titulo}");
+    }
 
 #line default
 #line hidden
