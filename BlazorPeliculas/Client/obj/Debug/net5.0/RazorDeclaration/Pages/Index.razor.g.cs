@@ -82,6 +82,13 @@ using BlazorPeliculas.Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Client.Helpers;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -91,9 +98,14 @@ using BlazorPeliculas.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
+#line 7 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
+
+    private void ManejarClick()
+    {
+        Console.WriteLine("Me  han clickeado desde método");
+    }
 
 #line default
 #line hidden
