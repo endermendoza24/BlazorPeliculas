@@ -107,7 +107,30 @@ using BlazorPeliculas.Shared.Entidades;
 #line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
        
     [Parameter] public List<Pelicula> Peliculas { get; set; }
-    
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"OnInitialized - Cantidad películas: {Peliculas.Count}");
+    }
+
+    protected override void OnParametersSet()
+    {
+        Console.Write($"OnParametersSet - Cantidad películas: {Peliculas.Count}");
+    }
+
+    protected override void OnAfterRender(bool primeraRenderizacion)
+    {
+        Console.WriteLine($"Primera vez {primeraRenderizacion}");
+    }
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine("Shoulod render");
+        return false;
+    }
+
+
+
+
     bool MostrarBotones = true;
 
     void EliminarPelicula(Pelicula pelicula)
