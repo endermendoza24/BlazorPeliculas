@@ -1,7 +1,15 @@
 ﻿@if (Peliculas == null)
 {
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831" />
-    <text>Cargando...</text>
+        @if(ChildContent == null)
+                {
+
+
+<text>Cargando...</text>
+        }
+        else
+        {
+            ChildContent;
+        }
 }
 else if (Peliculas.Count == 0)
 {
@@ -20,6 +28,7 @@ else
 
 @code {
     [Parameter] public List<Pelicula> Peliculas { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
     bool MostrarBotones = true;
 
     void EliminarPelicula(Pelicula pelicula)
