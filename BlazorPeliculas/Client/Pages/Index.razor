@@ -1,13 +1,13 @@
 ﻿@page "/"
 @inject ServicioSingleton singleton
+@inject IRepositorio repositorio
 
 <p>Singleton count: @singleton.Valor</p>
 
 
 <div>
     <h3>Lista de películas</h3>
-    <ListadoPeliculas Peliculas="Peliculas" />
-
+    <ListadoPeliculas Peliculas="Peliculas" />    
 </div>
 
 <button @onclick="AgregarPelicula">Agregar película</button>
@@ -18,12 +18,7 @@
 
     protected override void OnInitialized()
     {
-        Peliculas = new List<Pelicula>()
-        {
-                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
-                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
-                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
-            };
+        Peliculas = repositorio.ObtenerPeliculas();
     }
 
     void AgregarPelicula()

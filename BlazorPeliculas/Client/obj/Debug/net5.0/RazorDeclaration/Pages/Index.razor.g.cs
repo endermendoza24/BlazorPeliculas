@@ -96,6 +96,13 @@ using BlazorPeliculas.Shared.Entidades;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Client.Repositorios;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -112,12 +119,7 @@ using BlazorPeliculas.Shared.Entidades;
 
     protected override void OnInitialized()
     {
-        Peliculas = new List<Pelicula>()
-        {
-                new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
-                new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
-                new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
-            };
+        Peliculas = repositorio.ObtenerPeliculas();
     }
 
     void AgregarPelicula()
@@ -148,6 +150,7 @@ using BlazorPeliculas.Shared.Entidades;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IRepositorio repositorio { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ServicioSingleton singleton { get; set; }
     }
 }

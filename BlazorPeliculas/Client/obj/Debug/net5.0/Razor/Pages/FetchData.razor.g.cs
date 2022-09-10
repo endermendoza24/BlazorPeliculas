@@ -94,6 +94,13 @@ using BlazorPeliculas.Shared.Entidades;
 #line hidden
 #nullable disable
 #nullable restore
+#line 13 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\_Imports.razor"
+using BlazorPeliculas.Client.Repositorios;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\FetchData.razor"
 using BlazorPeliculas.Shared;
 
