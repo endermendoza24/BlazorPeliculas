@@ -105,7 +105,7 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 10 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
+#line 11 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
 
