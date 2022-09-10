@@ -108,11 +108,9 @@ using BlazorPeliculas.Shared.Entidades;
       
     [Parameter] public  Pelicula Pelicula { get; set; }
     [Parameter] public bool MostrarBotones { get; set; } = false;
+    [Parameter] public EventCallback<Pelicula> EliminarPelicula { get; set; }
 
-    void Eliminar()
-    {
-        Console.WriteLine($"Eliminando la pelicula {Pelicula.Titulo}");
-    }
+   
 
 #line default
 #line hidden
