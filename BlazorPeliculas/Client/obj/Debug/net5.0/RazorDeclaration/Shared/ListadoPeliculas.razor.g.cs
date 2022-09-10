@@ -107,7 +107,7 @@ using BlazorPeliculas.Shared.Entidades;
 #line 20 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
        
     [Parameter] public List<Pelicula> Peliculas { get; set; }
-    bool MostrarBotones = false;
+    bool MostrarBotones = true;
 
 
 #line default
