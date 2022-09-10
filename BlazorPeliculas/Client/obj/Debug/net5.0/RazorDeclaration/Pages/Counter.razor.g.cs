@@ -105,18 +105,22 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 10 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Counter.razor"
+#line 14 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Counter.razor"
        
     private int currentCount = 0;
 
     private void IncrementCount()
     {
         currentCount++;
+        singleton.Valor = currentCount;
+        transient.Valor = currentCount;
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ServicioTransient transient { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ServicioSingleton singleton { get; set; }
     }
 }
 #pragma warning restore 1591

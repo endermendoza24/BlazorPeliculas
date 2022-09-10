@@ -1,5 +1,7 @@
 ﻿@page "/"
+@inject ServicioSingleton singleton
 
+<p>Singleton count: @singleton.Valor</p>
 
 
 <div>
@@ -16,8 +18,8 @@
 
     protected override void OnInitialized()
     {
-        Peliculas =  new List<Pelicula>()
-            {
+        Peliculas = new List<Pelicula>()
+        {
                 new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
                 new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
                 new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
@@ -26,7 +28,7 @@
 
     void AgregarPelicula()
     {
-        Peliculas.Add(new Pelicula() { Titulo = "Nueva película", Lanzamiento = DateTime.Today});
+        Peliculas.Add(new Pelicula() { Titulo = "Nueva película", Lanzamiento = DateTime.Today });
     }
 
     public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
@@ -40,7 +42,7 @@
         };
     }
 
-    // Lista   
+    // Lista
 
     private void ManejarClick()
     {

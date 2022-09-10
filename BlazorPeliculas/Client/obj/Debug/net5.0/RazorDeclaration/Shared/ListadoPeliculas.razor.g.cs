@@ -125,7 +125,7 @@ using BlazorPeliculas.Shared.Entidades;
     protected override bool ShouldRender()
     {
         Console.WriteLine("Shoulod render");
-        return false;
+        return true;
     }
 
 

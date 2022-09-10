@@ -105,15 +105,15 @@ using BlazorPeliculas.Shared.Entidades;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
+#line 15 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Pages\Index.razor"
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
     private List<Pelicula> Peliculas;
 
     protected override void OnInitialized()
     {
-        Peliculas =  new List<Pelicula>()
-            {
+        Peliculas = new List<Pelicula>()
+        {
                 new Pelicula(){Titulo = "SpiderMan : Far from home", Lanzamiento = new DateTime(2019,7,2)},
                 new Pelicula(){Titulo = "Moana", Lanzamiento = new DateTime(2016,11,23)},
                 new Pelicula(){Titulo = "Inception", Lanzamiento = new DateTime(2010,7,16)}
@@ -122,7 +122,7 @@ using BlazorPeliculas.Shared.Entidades;
 
     void AgregarPelicula()
     {
-        Peliculas.Add(new Pelicula() { Titulo = "Nueva película", Lanzamiento = DateTime.Today});
+        Peliculas.Add(new Pelicula() { Titulo = "Nueva película", Lanzamiento = DateTime.Today });
     }
 
     public Pelicula SpiderMan { get { return ObtenerPelicula(); } }
@@ -136,7 +136,7 @@ using BlazorPeliculas.Shared.Entidades;
         };
     }
 
-    // Lista   
+    // Lista
 
     private void ManejarClick()
     {
@@ -148,6 +148,7 @@ using BlazorPeliculas.Shared.Entidades;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ServicioSingleton singleton { get; set; }
     }
 }
 #pragma warning restore 1591
