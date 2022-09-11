@@ -111,7 +111,7 @@ using BlazorPeliculas.Client.Repositorios;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 12 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
+#line 13 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
        
     [Parameter] public List<Pelicula> Peliculas { get; set; }
 
@@ -140,16 +140,22 @@ using BlazorPeliculas.Client.Repositorios;
 
     bool MostrarBotones = true;
 
-    void EliminarPelicula(Pelicula pelicula)
+    async Task EliminarPelicula(Pelicula pelicula)
     {
-        Peliculas.Remove(pelicula);
-        Console.WriteLine($"Se ha eliminado la película {pelicula.Titulo}");
+        var confirmado = await js.Confirm($"¿Desea borrar la película {pelicula.Titulo}?");
+
+        if (confirmado)
+        {
+            Peliculas.Remove(pelicula);
+            Console.WriteLine($"Se ha eliminado la película {pelicula.Titulo}");
+        }
     }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
     }
 }
 #pragma warning restore 1591
