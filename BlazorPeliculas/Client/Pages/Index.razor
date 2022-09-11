@@ -7,7 +7,7 @@
 
 <div>
     <h3>Lista de películas</h3>
-    <ListadoPeliculas Peliculas="Peliculas" />    
+    <ListadoPeliculas  Peliculas="Peliculas" />    
 </div>
 
 <button @onclick="AgregarPelicula">Agregar película</button>
@@ -15,9 +15,11 @@
 @code{
     string nombre = "Endersson Alonso Mendoza Muñoz";
     private List<Pelicula> Peliculas;
+   
 
     protected override void OnInitialized()
     {
+     
         Peliculas = repositorio.ObtenerPeliculas();
     }
 

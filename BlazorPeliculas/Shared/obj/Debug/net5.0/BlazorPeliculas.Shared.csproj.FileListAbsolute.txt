@@ -2,7 +2,6 @@ C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\bin\Deb
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net5.0\BlazorPeliculas.Shared.dll
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net5.0\ref\BlazorPeliculas.Shared.dll
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\bin\Debug\net5.0\BlazorPeliculas.Shared.pdb
-C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.csproj.AssemblyReference.cache
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.AssemblyInfoInputs.cache
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Deb
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.dll
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\ref\BlazorPeliculas.Shared.dll
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.pdb
+C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Shared\obj\Debug\net5.0\BlazorPeliculas.Shared.csproj.AssemblyReference.cache

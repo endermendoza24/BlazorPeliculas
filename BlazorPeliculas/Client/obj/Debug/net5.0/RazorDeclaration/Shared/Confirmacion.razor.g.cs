@@ -103,76 +103,13 @@ using BlazorPeliculas.Client.Repositorios;
 #line default
 #line hidden
 #nullable disable
-    public partial class ListadoPeliculas : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Confirmacion : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 17 "C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\Shared\ListadoPeliculas.razor"
-       
-    Confirmacion confirmacion;
-    [Parameter] public List<Pelicula> Peliculas { get; set; }
-
-    protected override void OnInitialized()
-    {
-        Console.WriteLine($"OnInitialized - Cantidad películas: {Peliculas.Count}");
-    }
-
-    protected override void OnParametersSet()
-    {
-        Console.Write($"OnParametersSet - Cantidad películas: {Peliculas.Count}");
-    }
-
-    protected override void OnAfterRender(bool primeraRenderizacion)
-    {
-        Console.WriteLine($"Primera vez {primeraRenderizacion}");
-    }
-    protected override bool ShouldRender()
-    {
-        Console.WriteLine("Shoulod render");
-        return true;
-    }
-
-
-
-
-    bool MostrarBotones = true;
-
-    async Task EliminarPelicula(Pelicula pelicula)
-    {
-        confirmacion.Mostrar();
-        peliculaABorrar = pelicula;
-        //var confirmado = await js.Confirm($"¿Desea borrar la película {pelicula.Titulo}?");
-
-        //if (confirmado)
-        //{
-        //    Peliculas.Remove(pelicula);
-        //    Console.WriteLine($"Se ha eliminado la película {pelicula.Titulo}");
-        //}
-    }
-
-    Pelicula peliculaABorrar;
-
-    void EliminarPeliculaConfirmacion()
-    {
-        Peliculas.Remove(peliculaABorrar);
-        confirmacion.Ocultar();
-        peliculaABorrar = null;
-    }
-    void onCancelConfirmacion()
-    {
-        confirmacion.Ocultar();
-        peliculaABorrar = null;
-    }
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime js { get; set; }
     }
 }
 #pragma warning restore 1591

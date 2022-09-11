@@ -116,9 +116,11 @@ using BlazorPeliculas.Client.Repositorios;
       
     string nombre = "Endersson Alonso Mendoza Muñoz";
     private List<Pelicula> Peliculas;
+   
 
     protected override void OnInitialized()
     {
+     
         Peliculas = repositorio.ObtenerPeliculas();
     }
 

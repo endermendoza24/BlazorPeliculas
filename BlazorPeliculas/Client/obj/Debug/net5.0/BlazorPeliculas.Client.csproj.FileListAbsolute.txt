@@ -640,3 +640,4 @@ C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\obj\Deb
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net5.0\Razor\Shared\PeliculaIndividual.razor.g.cs
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net5.0\RazorDeclaration\Shared\ListadoGenerico.razor.g.cs
 C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net5.0\Razor\Shared\ListadoGenerico.razor.g.cs
+C:\Users\ENDERSSONMENDOZA\Desktop\BlazorPeliculas\BlazorPeliculas\Client\obj\Debug\net5.0\scopedcss\Pages\Counter.razor.rz.scp.css
